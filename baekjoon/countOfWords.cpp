@@ -1,6 +1,7 @@
 // 1152번 단어의개수 브론즈2
 // https://www.acmicpc.net/problem/1152
-// 28분
+// 28분 + 5분
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -24,6 +25,7 @@ void solve() {
         now++;
     }
     if(now-before>1) answer++;
+    else if(sentence.length()==1 && sentence!=" ") answer++;
 }
 
 void output() {
